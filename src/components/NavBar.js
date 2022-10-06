@@ -1,29 +1,32 @@
 import logo from '../fae-logo.png'
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
         <header className="header">
             <figure className="header-logo">
-                <img src={logo} alt='header-logo' className='header-logo'/>
+                <Link to={'/'}>
+                    <img src={logo} alt='header-logo' className='header-logo'/>
+                </Link>
             </figure>
             <nav className='nav'>
                 <div className='nav--list'>
                     <ul className='nav--list-menu'>
                         <li class="nav--list-item">
-                            <a href="/">Home</a>
+                            <Link to={"/"}>Home</Link>
                         </li>
                         <li class="nav--list-item">
-                            <a href="/">Catálogo</a>
+                            <Link to={`/category/${'aros'}`}>Aros</Link>
                         </li>
                         <li class="nav--list-item">
-                            <a href="/">Contacto</a>
+                            <Link to={`/category/${'arcilla'}`}>Aros de Arcilla</Link>
                         </li>
                         <li class="nav--list-item">
-                            <a href="/">Favoritos</a>
+                            <Link to={`/category/${'collares'}`}>Collares</Link>
                         </li>
                         <li class="nav--list-item">
-                            <button class="show-register">Registrarse/Iniciar Sesión</button>
+                            <Link to={`/category/${'pulseras'}`}>Pulseras</Link>
                         </li>
                         <li class="nav--list-item">
                             <CartWidget></CartWidget>
