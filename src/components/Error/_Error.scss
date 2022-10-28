@@ -1,0 +1,15 @@
+.error-404 {
+    height: 50vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    h1 {
+        font-size: 3.2rem;
+        margin-bottom: 24px;
+    }
+
+    .back-to-home {
+        color: $clr-main-color;
+    }
+}

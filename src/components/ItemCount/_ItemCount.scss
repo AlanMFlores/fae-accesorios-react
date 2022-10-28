@@ -1,0 +1,36 @@
+.container-counter {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+
+    .container-btn {
+        display: flex;
+        gap: 8px;
+
+        align-items: center;
+
+        .btn-counter {
+            padding: 8px 16px;
+            background-color: $clr-gray-color;
+            border-radius: 4px;
+
+        }
+    }
+
+    .btn-add {
+        background-color: $clr-main-color;
+        color: $clr-white-color;
+        padding: 8px;
+        border-radius: 4px;
+        grid-column: 2/6;
+        transition: all ease 300ms;
+
+        &:hover {
+            background-color: $clr-main-color-darker;
+        }
+
+        &:disabled {
+            background-color: $clr-gray-color;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.products-home {
+    @include columns-padding;
+
+    &--title {
+        margin-top: 24px;
+        text-align: center;
+    }
+}

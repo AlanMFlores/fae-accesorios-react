@@ -1,0 +1,24 @@
+.products-container {
+    display: grid;
+    justify-content: center;
+    padding-top: $spacing-sections-x-medium;
+    text-align: center;
+    background-color: $clr-white-color;
+
+    @include media(x-medium-dev) {
+        padding-top: $spacing-sections-x-medium;
+        max-width: 624px;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    @include media(x-large-dev) {
+        max-width: 920px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-title {
+        margin-bottom: $spacing-sections-x-small;
+    }
+}

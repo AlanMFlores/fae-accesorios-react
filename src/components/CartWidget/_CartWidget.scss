@@ -1,0 +1,20 @@
+.cart-widget-btn {
+    position: relative;
+    display: flex;
+    gap: 4px;
+
+    .products-in-cart {
+        display: grid;
+        place-content: center;
+        width: 20px;
+        height: 20px;
+        padding: 8px;
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-size: 1rem;
+        background-color: $clr-main-color;
+        color: $clr-white-color;
+        border-radius: 100%;
+    }
+}
