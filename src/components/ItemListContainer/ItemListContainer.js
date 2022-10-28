@@ -38,7 +38,7 @@ function ItemListContainer(props) {
                 <Loading/>
                 : (
                     <>
-                        <h1 className='products-home--title'>Bienvenidos a FAE Accesorios</h1>
+                        <h1 className='products-home--title'>FAE Accesorios</h1>
                         <ItemList items={items}/>
                     </>
                 )
