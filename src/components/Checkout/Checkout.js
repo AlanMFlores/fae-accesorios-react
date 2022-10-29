@@ -23,7 +23,7 @@ function Checkout() {
 
     const handleEmail = e => setEmail(e.target.value)
 
-    const handleEmailConfirm = e => setEmailConfirm(e.target.value == email ? emailConfirm : 'Email Inválido')
+    const handleEmailConfirm = e => setEmailConfirm(e.target.value)
 
     const handleSubmit = e => {
         e.preventDefault();
