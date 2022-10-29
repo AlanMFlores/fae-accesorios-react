@@ -23,7 +23,7 @@ function Checkout() {
 
     const handleEmail = e => setEmail(e.target.value)
 
-    const handleEmailConfirm = e => setEmailConfirm(e.target.value)
+    const handleEmailConfirm = e => setEmailConfirm(e.target.value == email ? emailConfirm : 'Email Inválido')
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -93,7 +93,7 @@ function Checkout() {
                         type="email"
                         name="email-confirm"
                         placeholder="Correo Electrónico"
-                        value={emailConfirm == email ? email : 'Email Inválido'}
+                        value={emailConfirm}
                         onChange={handleEmailConfirm}
                     />
                     <button className='form-btn'>Enviar</button>
