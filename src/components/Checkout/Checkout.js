@@ -93,7 +93,7 @@ function Checkout() {
                         type="email"
                         name="email-confirm"
                         placeholder="Correo Electrónico"
-                        value={emailConfirm}
+                        value={emailConfirm == email ? email : 'Email Inválido'}
                         onChange={handleEmailConfirm}
                     />
                     <button className='form-btn'>Enviar</button>
